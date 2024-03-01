@@ -1,0 +1,26 @@
+.nav-link {
+    color: white;
+    margin-top: 10px;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav{
+    background-color: #D68060;
+    width: 100%;
+}
+
+.NavBar{
+    display: flex;
+    align-items: center;
+}
+
+.NavBar h2{
+    margin-right: auto;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+} 
