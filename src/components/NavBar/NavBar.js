@@ -4,11 +4,10 @@ const NavBar = () => {
 
     return (
         <nav className='NavBar'>
-      
-            <ul className="nav justify-content-end">
             <h2>Nombre Genial</h2>
+            <ul className="nav justify-content-end">
                 <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">Nosotros</a>
+                    <a className="nav-link active" aria-current="page" href="#">Inicio</a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="#">Departamentos</a>

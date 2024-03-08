@@ -1,6 +1,12 @@
-/*.carrusel{
-    padding: 50px;
+.carrusel{
+    opacity: 70%;
 }
-.carousel-item {
-    padding: 50px; 
-}*/
+
+#carouselExampleAutoplaying {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh; /* Esto asegura que el carrusel ocupe toda la altura visible de la ventana del navegador */
+    z-index: 1; /* Para asegurarse de que esté detrás del contenido principal */
+}
+
