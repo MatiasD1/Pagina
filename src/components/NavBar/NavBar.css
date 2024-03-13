@@ -25,10 +25,11 @@
 }
 
 .NavBar h2 {
+    position: fixed; /* Se mantiene fijo en la parte superior. PERMITIÓ SACAR EL FONDO NEGRO DEL H2 */
     margin-right: auto;
     font-family: 'Dancing Script', cursive;
     color: white;
     margin-left: 20px;
-    margin-top: 1rem; /* Cambiado a unidad de medida relativa */
+    margin-top: 4rem; /* Cambiado a unidad de medida relativa */
     z-index: 1200;
 }
