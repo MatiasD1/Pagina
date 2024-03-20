@@ -1,7 +1,6 @@
 .carrusel{
     opacity: 70%;
     margin-top: auto; /* Empuja el carrusel hacia la parte inferior */
-    margin-bottom: 20px;
 }
 
 #carouselExampleAutoplaying {

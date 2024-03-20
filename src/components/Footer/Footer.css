@@ -11,14 +11,12 @@ footer{
 .columnaFooter{
     display: flex;
     flex-direction: column;
-    
 }
 .columnaFooter h3 {
     margin-bottom: 10px; /* Esto elimina el margen inferior predeterminado */
     font-size: 25px;
-  }  
+}  
 .columnaFooter p{
-    justify-content: center;
     font-size: 14px;
     max-width: 150px;
     margin: auto;
