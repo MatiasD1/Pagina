@@ -1,8 +1,10 @@
 .frase{
     width: 100%;
-    height: auto;
+    height: 700px;
+    overflow: hidden;
 }
 .fotoFrase{
     width: 100%;
     opacity: 60%;
+    height: auto;
 }

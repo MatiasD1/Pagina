@@ -1,4 +1,5 @@
 import './Contacto.css'; 
+import fotoCosta from "../../img/costa.jpeg"
 
 const Contacto = () => {
     return (
@@ -33,9 +34,8 @@ const Contacto = () => {
     
                 <div className="about-us">
                     <h2>Nosotros</h2>
-                    <p>Somos un complejo de departamentos en alquiler ubicado en una zona tranquila y con hermosas vistas. Ofrecemos una experiencia única para nuestros huéspedes.</p>
+                    <p>Somos un complejo de departamentos en alquiler ubicado en una zona tranquila en la costa marplatense. Ofrecemos una experiencia única para nuestros huéspedes.</p>
                     <p>No dude en contactarnos para más información.</p>
-    
                     <h3>Información de Contacto:</h3>
                     <p>Dirección: Calle Principal 1234</p>
                     <p>Teléfono: 123-456-7890</p>
