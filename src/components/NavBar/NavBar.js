@@ -1,9 +1,32 @@
-import './NavBar.css'; 
+import React, { useState, useEffect } from 'react';
+import './NavBar.css';
+import 'animate.css/animate.min.css';
+
 
 const NavBar = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const triggerPoint = 80;
+
+            if (scrollTop > triggerPoint) {
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
-        <nav className='NavBar'>
+        <nav className={`NavBar ${isVisible ? 'animate__animated animate__fadeInDown fixed' : ''}`}>
             <h2>Nombre Genial</h2>
             <ul className="nav justify-content-end">
                 <li className="nav-item">
@@ -23,7 +46,7 @@ const NavBar = () => {
                 </li>
             </ul>
         </nav>
-    )
-}
+    );
+};
 
-export default NavBar
+export default NavBar; 

@@ -2,6 +2,9 @@
     color: rgb(255, 222, 203);
     margin-top: 1rem; /* Cambiado a unidad de medida relativa */
     border-bottom: 2px solid transparent; /* Subrayado transparente por defecto */
+    padding: 20px 20px; /* Ajusta el relleno del botón */
+    font-size: 16px; /* Ajusta el tamaño del texto del botón */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .nav-link:hover {
@@ -11,12 +14,12 @@
 }
 
 .nav {
-    position: fixed; /* Se mantiene fijo en la parte superior */
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 1200; /* Asegura que esté por encima del carrusel */
-    transition: background-color 0.5s ease;
-    margin-right: 50px;
+    margin-bottom: 30px;
+
 }
 
 .NavBar {
@@ -25,11 +28,24 @@
 }
 
 .NavBar h2 {
-    position: fixed; /* Se mantiene fijo en la parte superior. PERMITIÓ SACAR EL FONDO NEGRO DEL H2 */
+    position: absolute; /* Cambiado a relativo para que no se pierda el flujo normal del documento */
     margin-right: auto;
     font-family: 'Dancing Script', cursive;
     color: white;
     margin-left: 20px;
-    margin-top: 4rem; /* Cambiado a unidad de medida relativa */
-    z-index: 1200;
+    margin-top: 90px; 
+    z-index: 1500; /* Asegura que esté por encima del NavBar */
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1400; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.fixed .nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom, rgba(61, 61, 61, 0.5), transparent);
 }

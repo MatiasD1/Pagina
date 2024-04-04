@@ -16,7 +16,7 @@ function Footer() {
                 <a className="accesoNav" href="#">Contacto</a>
             </div>
             <div className='columnaFooter'>
-                <h3>Mapa</h3>
+                <h3>Redes Sociales</h3>
             </div>        
         </footer>
     );
