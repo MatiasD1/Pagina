@@ -1,55 +1,93 @@
-.container{
-    width: auto;
-    height: auto;
-    padding: 2%;
+@font-face {
+    font-family: 'cardoBold';
+    src: url('../../assets/fonts/cardo/._Cardo-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'cardoItalic';
+    src: url('../../assets/fonts/cardo/._Cardo-Italic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'cardoRegular';
+    src: url('../../assets/fonts/cardo/._Cardo-Regular.ttf') format('truetype');
+}
+.contacto {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
     background-image: url('../../img/costa.jpeg');
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    flex-direction: row; 
+    justify-content: space-between;
+    height: 100vh;
+    padding: 20px;
 }
 
-.contact-form, .about-us {
-    width: 45%;
+.textoContacto {
+    align-self: center;
+    /* Padding eliminado para alinear el texto correctamente */
 }
 
 .contact-form {
-    background-color: #f9f9f9;
-    padding: 20px;
+    margin-top: 63px;
+    width: 400px; /* Ancho ajustado para entrar en el espacio */
+    max-width: 100%; 
+    max-height: 550px;
+    height: auto;
+    background-color: #00000059;
+    padding: 10px;
     border-radius: 5px;
+    font-family: "cardoBold";
+    font-size: 16px;
 }
 
-.about-us {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 5px;
-}
 
 h2 {
-    color: #333;
+    color: wheat;
+    padding-bottom: 10px;
+    font-family: 'cardoRegular';
 }
 
 label {
     display: block;
     margin-bottom: 5px;
+    color: wheat;
 }
 
 input[type="text"],
 input[type="date"],
 input[type="number"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+input[type="email"]
+{
+    background-color: #00000059;
+    color: wheat;
+    width: 90%;
+    padding: 6px; /* Reducir el relleno */
+    margin-bottom: 8px; /* Reducir el margen inferior */
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    height: 30px; /* Reducir la altura */
+}
+textarea {
+    background-color: #00000059;
+    color: wheat;
+    width: 90%;
+    padding: 6px; /* Reducir el relleno */
+    margin-bottom: 8px; /* Reducir el margen inferior */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 100px; /* Reducir la altura */
+}
+.fechasContacto {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 8px; /* Agregar margen inferior para separarlos de los demás inputs */
 }
 
 button[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #B7472A;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -58,5 +96,5 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #bb3614;
 }

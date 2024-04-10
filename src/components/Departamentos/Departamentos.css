@@ -4,6 +4,10 @@
     position: relative; /* O static si no necesitas posicionamiento especial */
     z-index: 1; /* Un valor más alto que el carrusel si es necesario */
 }
+.departamentos h1{
+    padding-top: 100px;
+    padding-bottom: 485px;
+}
 .containerDepartamentos {
     display: grid;
     grid-template-columns: 1fr; /* Dos columnas */
@@ -11,12 +15,9 @@
 }
 .item {
     display: flex;
-    padding-left: 60px;
-    padding-right: 60px;
-    margin-bottom: 20px;
 }
 .item img {
-    width: 450px;
-    height: 300px;
+    width: 700px;
+    height: 500px;
 }
 

@@ -1,52 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './NavBar.css';
-import 'animate.css/animate.min.css';
 
-
-const NavBar = () => {
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const triggerPoint = 80;
-
-            if (scrollTop > triggerPoint) {
-                setIsVisible(true);
-            } else {
-                setIsVisible(false);
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-    return (
-        <nav className={`NavBar ${isVisible ? 'animate__animated animate__fadeInDown fixed' : ''}`}>
-            <h2>Nombre Genial</h2>
-            <ul className="nav justify-content-end">
-                <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Departamentos</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Servicios</a> 
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Destinos Cercanos</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    );
+const NavBar = ({ isVisible }) => {
+  return (
+    <nav className={`NavBar ${isVisible ? 'fixed' : ''}`}>
+      <h2>Puerto Bueno</h2>
+      <ul className="nav justify-content-end">
+        <li className="nav-item">
+          <Link to="/" className="nav-link">Inicio</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/departamentos" className="nav-link">Departamentos</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/ubicacion" className="nav-link">Ubicación</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/contacto" className="nav-link">Contacto</Link>
+        </li>
+      </ul>
+    </nav>
+  );
 };
 
-export default NavBar; 
+export default NavBar;

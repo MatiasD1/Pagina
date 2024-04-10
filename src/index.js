@@ -20,6 +20,13 @@ link3.href = 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..
 link3.rel = 'stylesheet';
 document.head.appendChild(link3);
 
+const googleFontsLink = document.createElement('link');
+googleFontsLink.rel = 'stylesheet';
+googleFontsLink.href = 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap';
+
+// Agregar el enlace al <head> del documento
+document.head.appendChild(googleFontsLink);
+
 // Renderizar la aplicación de React
 ReactDOM.render(
   <React.StrictMode>
