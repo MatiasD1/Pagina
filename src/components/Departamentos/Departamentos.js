@@ -1,46 +1,71 @@
-import './Departamentos.css'; 
+import React, { useState } from 'react';
+import './Departamentos.css';
+import GaleriaImagenes from '../GaleriaImagenes/GaleriaImagenes';
+import CostaImagen from "../../img/costa.jpeg";
+import fotoExterior from "../../img/fotoExterior.jpg";
+import fotoPieza from "../../img/fotoPieza.jpg"; 
+import fotoDucha from "../../img/Ducha.JPG"
+import fotoHabitacion from "../../img/fotoHabitacion.JPG"
+import fotoSala from "../../img/fotoSala.jpg"
+import living from "../../img/Living.JPG"
 
 const Departamentos = () => {
+    const [showCarrusel, setShowCarrusel] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
+    const [images] = useState([
+        fotoPieza,
+        CostaImagen,
+        fotoExterior,
+        // Agrega más URLs de imágenes aquí según sea necesario
+    ]);
+    const handleImageClick = () => {
+        setSelectedImage(images);
+        setShowCarrusel(true);
+    };
     return (
         <div className='departamentos'>
-            <h1>Departamentos</h1>
-            <p>lorem ipsum</p>
-                <div class="containerDepartamentos">
-                    <div class="item">
-                        <img src="https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/02/DC-Comics-Cuanto-tiempo-lleva-activo-Bruce-Wayne-como-el-Caballero-de-la-Noche-en-The-Batman.png?fit=1280%2C720&quality=80&ssl=1" alt="Imagen 1" />
-                        <div class="textoDepartamentos">
-                                <h2>Departamento 1</h2>
-                                <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 </p>
-                            </div>
-                    </div>
-                    <div class="item"> 
-                        <div class="textoDepartamentos">
-                            <h2>Departamento 2</h2>
-                            <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 </p>
-                        </div>      
-                        <img src="https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/02/DC-Comics-Cuanto-tiempo-lleva-activo-Bruce-Wayne-como-el-Caballero-de-la-Noche-en-The-Batman.png?fit=1280%2C720&quality=80&ssl=1" alt="Imagen 2"/>
-                    </div>
-                    <div class="item">
-                        <img src="https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/02/DC-Comics-Cuanto-tiempo-lleva-activo-Bruce-Wayne-como-el-Caballero-de-la-Noche-en-The-Batman.png?fit=1280%2C720&quality=80&ssl=1" alt="Imagen 3"/>
-                        <div class="textoDepartamentos">
-                            <h2>Departamento 3</h2>
-                            <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 </p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="textoDepartamentos">
-                                <h2>Departamento 4</h2>
-                                <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 </p>
-                        </div>
-                        <img src="https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/02/DC-Comics-Cuanto-tiempo-lleva-activo-Bruce-Wayne-como-el-Caballero-de-la-Noche-en-The-Batman.png?fit=1280%2C720&quality=80&ssl=1" alt="Imagen 4"/>
+            
+            <div className='portadaDepartamentos'>
+
+            </div>
+            
+            <div class="containerDepartamentos">
+                <div className="item" onClick={handleImageClick}>
+                    <img src={fotoSala} alt="Imagen 1" />
+                    <div className="textoDepartamentos">
+                        <h2>Departamento 1</h2>
+                        <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 </p>
                     </div>
                 </div>
+                <div className="item" onClick={() => handleImageClick(CostaImagen)}>
+                    <div class="textoDepartamentos">
+                        <h2>Departamento 2</h2>
+                        <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 </p>
+                    </div>      
+                    <img src={fotoDucha} alt="Imagen 2"/>
+                </div>
+                <div className="item" onClick={() => handleImageClick(CostaImagen)}>
+                    <img src={fotoHabitacion} alt="Imagen 3"/>
+                    <div class="textoDepartamentos">
+                        <h2>Departamento 3</h2>
+                        <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 </p>
+                    </div>
+                </div>
+                <div className="item" onClick={() => handleImageClick(CostaImagen)}>
+                    <div class="textoDepartamentos">
+                        <h2>Departamento 4</h2>
+                        <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 </p>
+                    </div>
+                    <img src={living} alt="Imagen 4"/>
+                </div>
+            </div>
+            {showCarrusel && <GaleriaImagenes images={selectedImage} onClose={() => setShowCarrusel(false)} />} {/* Renderiza el carrusel si showCarrusel es true */}
         </div>
-    
     );
 }
 
 export default Departamentos;
+
 
 /*
 import './Departamentos.css'; 

@@ -4,20 +4,36 @@
     position: relative; /* O static si no necesitas posicionamiento especial */
     z-index: 1; /* Un valor más alto que el carrusel si es necesario */
 }
+.portadaDepartamentos{
+    width: auto;
+    height: 500px;
+    background-image: url('../../img/SanCarlos.jpg');
+    background-size: cover;
+    background-position: center;  
+    margin-bottom: 45px;
+}
 .departamentos h1{
-    padding-top: 100px;
-    padding-bottom: 485px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .containerDepartamentos {
     display: grid;
-    grid-template-columns: 1fr; /* Dos columnas */
-    gap: 20px; /* Espacio entre las filas */
+    grid-template-columns: 1fr; /* Dos columnas, una con el 50% del ancho y otra con el resto */
 }
+
 .item {
     display: flex;
 }
+
 .item img {
-    width: 700px;
-    height: 500px;
+    width: 85%; /* La imagen ocupará todo el ancho de su contenedor */
+    height: 400px; /* Ajusta la altura automáticamente para mantener la proporción */
+    transition: 0.3s;
 }
+.item img:hover{
+    cursor: pointer;
+    opacity: 50%;
+    
+}
+
 

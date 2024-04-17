@@ -81,9 +81,16 @@ textarea {
 }
 .fechasContacto {
     display: flex;
-    width: 100%;
-    justify-content: center;
+    width: auto;
+    justify-content: space-around;
     margin-bottom: 8px; /* Agregar margen inferior para separarlos de los demás inputs */
+}
+
+#fecha-entrada{
+    width: 150px;
+}
+#fecha-salida{
+    width: 150px;
 }
 
 button[type="submit"] {
