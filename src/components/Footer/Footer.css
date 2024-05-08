@@ -2,11 +2,13 @@ footer{
     padding-top: 20px;
     width: 100%;
     height: 200px;
-    background-color: #EB9788;
+    background-color: #f1ad6d;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
     justify-content: center;
+    margin-bottom: 0;
+    margin-top: auto; /* Empuja el footer hacia abajo hasta el final de la página */
 } 
 .columnaFooter{
     display: flex;
@@ -20,4 +22,14 @@ footer{
     font-size: 14px;
     max-width: 150px;
     margin: auto;
+}
+.logosRedes{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 70px 20px 70px;/*sup, der, inf, izq*/
+
+}
+.logoRed img{/*faltaba el img para influir en el tamaño de las img*/
+    width: 50px;
+    height: 50px;
 }

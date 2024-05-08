@@ -8,6 +8,8 @@ import fotoDucha from "../../img/Ducha.JPG"
 import fotoHabitacion from "../../img/fotoHabitacion.JPG"
 import fotoSala from "../../img/fotoSala.jpg"
 import living from "../../img/Living.JPG"
+import simboloMas from "../../img/icons/simboloMas.png" 
+
 
 const Departamentos = () => {
     const [showCarrusel, setShowCarrusel] = useState(false);
@@ -30,34 +32,60 @@ const Departamentos = () => {
             </div>
             
             <div class="containerDepartamentos">
+
                 <div className="item" onClick={handleImageClick}>
-                    <img src={fotoSala} alt="Imagen 1" />
+                      <div className='fotoDepto'>
+                            <img src={fotoSala} alt="Imagen 1"/>
+                      </div>
                     <div className="textoDepartamentos">
                         <h2>Departamento 1</h2>
-                        <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 </p>
+                        <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 </p>
+                    </div>
+                    <div className="contenidoOverlay">
+                        <img src={simboloMas} alt="Simbolo más" className='simboloMas'/>
                     </div>
                 </div>
+
+                
                 <div className="item" onClick={() => handleImageClick(CostaImagen)}>
                     <div class="textoDepartamentos">
                         <h2>Departamento 2</h2>
                         <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 </p>
                     </div>      
-                    <img src={fotoDucha} alt="Imagen 2"/>
+                    <div className='fotoDepto'>
+                        <img src={fotoDucha} alt="Imagen 2"/>
+                    </div>
+                    <div className="contenidoOverlay">
+                        <img src={simboloMas} alt="Simbolo más" className='simboloMas'/>
+                    </div>
                 </div>
+
                 <div className="item" onClick={() => handleImageClick(CostaImagen)}>
-                    <img src={fotoHabitacion} alt="Imagen 3"/>
+                    <div className='fotoDepto'>
+                        <img src={fotoHabitacion} alt="Imagen 3"/>
+                    </div>
                     <div class="textoDepartamentos">
                         <h2>Departamento 3</h2>
                         <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 </p>
                     </div>
+                    <div className="contenidoOverlay">
+                        <img src={simboloMas} alt="Simbolo más" className='simboloMas'/>
+                    </div>
                 </div>
+
                 <div className="item" onClick={() => handleImageClick(CostaImagen)}>
                     <div class="textoDepartamentos">
                         <h2>Departamento 4</h2>
                         <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 </p>
                     </div>
-                    <img src={living} alt="Imagen 4"/>
+                    <div className='fotoDepto'>
+                        <img src={living} alt="Imagen 4"/>
+                    </div>
+                    <div className="contenidoOverlay">
+                        <img src={simboloMas} alt="Simbolo más" className='simboloMas'/>
+                    </div>
                 </div>
+                
             </div>
             {showCarrusel && <GaleriaImagenes images={selectedImage} onClose={() => setShowCarrusel(false)} />} {/* Renderiza el carrusel si showCarrusel es true */}
         </div>

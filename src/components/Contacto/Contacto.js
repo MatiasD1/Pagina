@@ -19,8 +19,7 @@ const Contacto = () => {
                             <div className="fecha1">
                                 <label htmlFor="fecha-entrada">Fecha de Entrada:</label>
                                 <input type="date" id="fecha-entrada" name="fecha-entrada" required />
-                            </div>
-                           
+                            </div>                          
                             <div className="fecha2">
                                 <label htmlFor="fecha-salida">Fecha de Salida:</label>
                                 <input type="date" id="fecha-salida" name="fecha-salida" required />       

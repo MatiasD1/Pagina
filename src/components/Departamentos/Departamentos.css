@@ -4,36 +4,43 @@
     position: relative; /* O static si no necesitas posicionamiento especial */
     z-index: 1; /* Un valor más alto que el carrusel si es necesario */
 }
+
 .portadaDepartamentos{
     width: auto;
-    height: 500px;
+    height: 650px;
     background-image: url('../../img/SanCarlos.jpg');
     background-size: cover;
     background-position: center;  
     margin-bottom: 45px;
 }
-.departamentos h1{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.containerDepartamentos {
-    display: grid;
-    grid-template-columns: 1fr; /* Dos columnas, una con el 50% del ancho y otra con el resto */
-}
 
 .item {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas, una para la foto y otra para el texto */
+    align-items: center; /* Centra verticalmente el contenido */
+    height: 450px; /* Altura de cada elemento */
 }
 
-.item img {
-    width: 85%; /* La imagen ocupará todo el ancho de su contenedor */
-    height: 400px; /* Ajusta la altura automáticamente para mantener la proporción */
+.fotoDepto {
+    width: 100%; /* Ajusta el ancho del contenedor de la foto al 100% */
+    height: 100%; /* Ajusta la altura del contenedor de la foto al 100% */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde del contenedor */
+}
+
+.fotoDepto img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor de la foto */
+    height: 100%; /* La imagen ocupa todo el alto del contenedor de la foto */
+    object-fit: cover; /* La imagen se ajusta manteniendo la relación de aspecto y cubriendo el contenedor */
     transition: 0.3s;
 }
-.item img:hover{
+.textoDepartamentos {
+    padding: 0px 20px; /* Espaciado interno para el texto */
+}
+.simboloMas{
+    position: absolute;
+    display: none;
+}
+.item img:hover {
     cursor: pointer;
     opacity: 50%;
-    
 }
-
-

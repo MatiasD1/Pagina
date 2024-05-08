@@ -1,4 +1,7 @@
 import './Footer.css'; 
+import facebookLogo from '../../img/icons/facebook.png';
+import xLogo from '../../img/icons/xLogo.png';
+import instagramLogo from '../../img/icons/instagramLogo.svg';
 
 function Footer() {
     return (
@@ -17,6 +20,18 @@ function Footer() {
             </div>
             <div className='columnaFooter'>
                 <h3>Redes Sociales</h3>
+                <div className="logosRedes">
+                    <a href="https://www.facebook.com" target="_blank" className="logoRed">
+                        <img src={facebookLogo} alt="Facebook"/>
+                    </a>
+                    <a href="https://www.x.com" target="_blank" className="logoRed">
+                        <img src={xLogo} alt="X"/>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" className="logoRed">
+                        <img src={instagramLogo} alt="Instagram"/>
+                    </a>
+                </div>
+                
             </div>        
         </footer>
     );

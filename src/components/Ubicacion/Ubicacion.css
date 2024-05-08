@@ -3,3 +3,24 @@
     height: 400px;
     background-color: #af0e0e;
 }
+
+.portadaUbicacion{
+    height: 500px;
+    background-image: url('../../img/SanCarlos.jpg');
+    background-size: cover;
+    background-position: center;  
+
+}
+
+.textoUbicacion{
+    height: 200px;
+    background-color: #df3a10;
+}
+.servicios{
+    height: 200px;
+    background-color: #00aeff;
+}
+.fraseUbicacion{
+    height: 200px;
+    background-color: #197740;
+}
