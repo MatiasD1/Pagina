@@ -9,7 +9,7 @@ import fotoHabitacion from "../../img/fotoHabitacion.JPG"
 import fotoSala from "../../img/fotoSala.jpg"
 import living from "../../img/Living.JPG"
 import simboloMas from "../../img/icons/simboloMas.png" 
-
+import Servicios from '../Servicios/Servicios.js';
 
 const Departamentos = () => {
     const [showCarrusel, setShowCarrusel] = useState(false);
@@ -72,7 +72,6 @@ const Departamentos = () => {
                         <img src={simboloMas} alt="Simbolo más" className='simboloMas'/>
                     </div>
                 </div>
-
                 <div className="item" onClick={() => handleImageClick(CostaImagen)}>
                     <div class="textoDepartamentos">
                         <h2>Departamento 4</h2>
@@ -84,10 +83,10 @@ const Departamentos = () => {
                     <div className="contenidoOverlay">
                         <img src={simboloMas} alt="Simbolo más" className='simboloMas'/>
                     </div>
-                </div>
-                
+                </div>                
             </div>
             {showCarrusel && <GaleriaImagenes images={selectedImage} onClose={() => setShowCarrusel(false)} />} {/* Renderiza el carrusel si showCarrusel es true */}
+            <Servicios/>
         </div>
     );
 }
