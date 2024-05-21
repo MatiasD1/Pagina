@@ -11,7 +11,7 @@ const Ubicacion = () => {
             <div className='textoUbicacion'>
 
             </div>
-            <div className='servicios'>
+            <div className='serviciosCercanos'>
 
             </div>
             <div className='fraseUbicacion'>

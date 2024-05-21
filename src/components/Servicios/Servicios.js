@@ -11,6 +11,9 @@ import TV from '../../img/icons/TV.png'
 import vajillaUtensillos from '../../img/icons/vajillaUtensillos.png'
 import wifi from '../../img/icons/wifi.png'
 import primerosAuxilios from '../../img/icons/primerosAuxilios.png'
+import alarma from '../../img/icons/alarma.png' 
+import cajaSeguridad from '../../img/icons/cajaSeguridad.png' 
+import secador from '../../img/icons/secador.png' 
 
 const Servicios = () => {
     return (
@@ -30,11 +33,11 @@ const Servicios = () => {
                     <img src={frazadasSabanas} alt="Icono frazadasSabanas"/>
                     <p>Sábanas y Frazadas</p>
                 </div>
+
                 <div className='icono'>
                     <img src={heladeraFreezer} alt="Icono heladeraFreezer"/>
                     <p>Heladera y Freezer</p>
                 </div>
-
                 <div className='icono'>
                     <img src={microondas} alt="Icono microondas"/>
                     <p>Microondas</p>
@@ -43,19 +46,20 @@ const Servicios = () => {
                     <img src={playa} alt="Icono playa"/>
                     <p>Playa cercana</p>
                 </div>
-                <div className='icono'>
-                    <img src={sommier} alt="Icono sommier"/>
-                    <p>Sommier</p>
-                </div>
-                <div className='icono'>
-                    <img src={toallas} alt="Icono toallas"/>
-                    <p>Toallas</p>
-                </div>
 
                 <div className='icono'>
-                    <img src={TV} alt="Icono TV"/>
-                    <p>TV</p>
+                    <img src={secador} alt="Icono secador"/>
+                    <p>Secador</p>
                 </div>
+                <div className='icono'>
+                    <img src={cajaSeguridad} alt="Icono caja de seguridad"/>
+                    <p>Caja de Seguridad</p>
+                </div>
+                <div className='icono'>
+                    <img src={alarma} alt="Icono alarma"/>
+                    <p>Alarma</p>
+                </div>
+
                 <div className='icono'>
                     <img src={vajillaUtensillos} alt="Icono vajillaUtensillos"/>
                     <p>Vajilla y Utensillos</p>
@@ -68,6 +72,20 @@ const Servicios = () => {
                     <img src={primerosAuxilios} alt="Icono primerosAuxilios"/>
                     <p>Botiquín</p>
                 </div>
+
+                <div className='icono'>
+                    <img src={vajillaUtensillos} alt="Icono vajillaUtensillos"/>
+                    <p>Vajilla y Utensillos</p>
+                </div>
+                <div className='icono'>
+                    <img src={wifi} alt="Icono wifi"/>
+                    <p>Wi-fi</p>
+                </div>
+                <div className='icono'>
+                    <img src={primerosAuxilios} alt="Icono primerosAuxilios"/>
+                    <p>Botiquín</p>
+                </div>
+                
 
             </div>
         </div>  
