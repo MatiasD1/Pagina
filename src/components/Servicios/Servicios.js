@@ -69,17 +69,17 @@ const Servicios = () => {
                     <p>Wi-fi</p>
                 </div>
                 <div className='icono'>
-                    <img src={primerosAuxilios} alt="Icono primerosAuxilios"/>
-                    <p>Botiquín</p>
+                    <img src={sommier} alt="Icono sommier"/>
+                    <p>Sommier</p>
                 </div>
 
                 <div className='icono'>
-                    <img src={vajillaUtensillos} alt="Icono vajillaUtensillos"/>
-                    <p>Vajilla y Utensillos</p>
+                    <img src={TV} alt="Icono TV"/>
+                    <p>TV</p>
                 </div>
                 <div className='icono'>
-                    <img src={wifi} alt="Icono wifi"/>
-                    <p>Wi-fi</p>
+                    <img src={toallas} alt="Icono toallas"/>
+                    <p>Toallas</p>
                 </div>
                 <div className='icono'>
                     <img src={primerosAuxilios} alt="Icono primerosAuxilios"/>

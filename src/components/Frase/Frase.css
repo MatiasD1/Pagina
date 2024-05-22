@@ -3,9 +3,17 @@
     height: auto;
     overflow: hidden;
     padding-top: 60px;
+    color: #ffffff;
+    background-color: black;
 }
 .fotoFrase{
     width: 100%;
     opacity: 60%;
     height: auto;
+}
+
+.textoFrase{
+    display: flex;
+    position:  absolute;
+    margin-top: -200px;
 }

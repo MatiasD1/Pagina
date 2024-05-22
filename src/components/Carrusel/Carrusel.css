@@ -10,6 +10,7 @@
     width: 100%;
     height: 100vh;
     z-index: 0; /* Para asegurarse de que esté detrás del contenido principal */
+    background-color: black;
 }
 
 

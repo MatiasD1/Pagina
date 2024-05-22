@@ -27,6 +27,34 @@ googleFontsLink.href = 'https://fonts.googleapis.com/css2?family=Dancing+Script:
 // Agregar el enlace al <head> del documento
 document.head.appendChild(googleFontsLink);
 
+// Agregar el script de Google Maps al <head> del documento
+const googleMapsScript = document.createElement('script');
+googleMapsScript.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik`;
+googleMapsScript.async = true;
+googleMapsScript.defer = true;
+document.head.appendChild(googleMapsScript);
+
+// src/utils/loadGoogleMaps.js
+export const loadGoogleMaps = (apiKey) => {
+  return new Promise((resolve, reject) => {
+    if (window.google) {
+      resolve(window.google);
+    } else {
+      const script = document.createElement('script');
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}`;
+      script.async = true;
+      script.defer = true;
+      script.onload = () => {
+        resolve(window.google);
+      };
+      script.onerror = (error) => {
+        reject(error);
+      };
+      document.head.appendChild(script);
+    }
+  });
+};
+
 // Renderizar la aplicación de React
 ReactDOM.render(
   <React.StrictMode>

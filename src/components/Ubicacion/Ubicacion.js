@@ -1,4 +1,5 @@
 import './Ubicacion.css'; 
+import Mapa from '../Mapa/Mapa.js'
 
 const Ubicacion = () => {
     return (
@@ -9,10 +10,10 @@ const Ubicacion = () => {
 
             </div>
             <div className='textoUbicacion'>
-
+                
             </div>
             <div className='serviciosCercanos'>
-
+                <Mapa/>
             </div>
             <div className='fraseUbicacion'>
 

@@ -7,6 +7,11 @@ const Inicio = () => {
     return (
         <div className='Inicio'>
             <Carrusel/>
+           
+            <h2>Titulo</h2>
+            <p className='textoFrase'>
+                Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion 
+            </p>
             <div className='presentacionInicio'>
                 <h2 className='tituloInicio'>Lorem Ipsum</h2>
                 <h3 className='fraseInicio'>Una vez instalada la extensión, abre el archivo donde deseas generar texto Lorem Ipsum.</h3>

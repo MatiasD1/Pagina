@@ -8,7 +8,7 @@
 .portadaDepartamentos{
     width: auto;
     height: 650px;
-    background-image: url('../../img/SanCarlos.jpg');
+    background-image: url('../../img/balcon.jpg');
     background-size: cover;
     background-position: center;  
     margin-bottom: 45px;
@@ -21,26 +21,40 @@
     height: 450px; /* Altura de cada elemento */
 }
 
-.fotoDepto {
+.fotosDeptos {
+    position: relative;
     width: 100%; /* Ajusta el ancho del contenedor de la foto al 100% */
     height: 100%; /* Ajusta la altura del contenedor de la foto al 100% */
     overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde del contenedor */
+    background-color: black;
 }
 
-.fotoDepto img {
+.fotoSimbolo {
+    position: absolute; /* Establece la posición absoluta para que la imagen se pueda mover libremente */
+    top: 50%; /* Coloca la parte superior de la imagen en el centro vertical */
+    left: 50%; /* Coloca la parte izquierda de la imagen en el centro horizontal */
+    transform: translate(-50%, -50%) scale(0.1); /* Centra la imagen horizontal y verticalmente y la escala al 50% del tamaño original */
+    z-index: 1; /* Coloca la imagen del símbolo encima de la imagen de la ducha */
+}
+
+.fotoDepto {
     width: 100%; /* La imagen ocupa todo el ancho del contenedor de la foto */
     height: 100%; /* La imagen ocupa todo el alto del contenedor de la foto */
     object-fit: cover; /* La imagen se ajusta manteniendo la relación de aspecto y cubriendo el contenedor */
     transition: 0.3s;
 }
+
 .textoDepartamentos {
     padding: 0px 20px; /* Espaciado interno para el texto */
+}
+.textoDepartamentos h2{
+    color: black;
 }
 .simboloMas{
     position: absolute;
     display: none;
 }
-.item img:hover {
+.fotosDeptos img:hover {
     cursor: pointer;
     opacity: 50%;
 }

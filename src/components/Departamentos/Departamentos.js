@@ -33,9 +33,10 @@ const Departamentos = () => {
             
             <div class="containerDepartamentos">
 
-                <div className="item" onClick={handleImageClick}>
-                      <div className='fotoDepto'>
-                            <img src={fotoSala} alt="Imagen 1"/>
+                <div className="item">
+                      <div className='fotosDeptos' onClick={handleImageClick}>
+                            <img src={simboloMas} alt="Simbolo Mas" className='fotoSimbolo'/>
+                            <img src={fotoSala} alt="Imagen 1" className='fotoDepto'/>
                       </div>
                     <div className="textoDepartamentos">
                         <h2>Departamento 1</h2>
@@ -47,22 +48,24 @@ const Departamentos = () => {
                 </div>
 
                 
-                <div className="item" onClick={() => handleImageClick(CostaImagen)}>
+                <div className="item">
                     <div class="textoDepartamentos">
                         <h2>Departamento 2</h2>
                         <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 </p>
                     </div>      
-                    <div className='fotoDepto'>
-                        <img src={fotoDucha} alt="Imagen 2"/>
+                    <div className='fotosDeptos' onClick={handleImageClick}> 
+                        <img src={simboloMas} alt="Simbolo Mas" className='fotoSimbolo'/>
+                        <img src={fotoDucha} alt="Imagen 2" className='fotoDepto'/>
                     </div>
                     <div className="contenidoOverlay">
                         <img src={simboloMas} alt="Simbolo más" className='simboloMas'/>
                     </div>
                 </div>
 
-                <div className="item" onClick={() => handleImageClick(CostaImagen)}>
-                    <div className='fotoDepto'>
-                        <img src={fotoHabitacion} alt="Imagen 3"/>
+                <div className="item">
+                    <div className='fotosDeptos' onClick={handleImageClick}>
+                        <img src={simboloMas} alt="Simbolo Mas" className='fotoSimbolo'/>
+                        <img src={fotoHabitacion} alt="Imagen 3" className='fotoDepto'/>
                     </div>
                     <div class="textoDepartamentos">
                         <h2>Departamento 3</h2>
@@ -72,13 +75,14 @@ const Departamentos = () => {
                         <img src={simboloMas} alt="Simbolo más" className='simboloMas'/>
                     </div>
                 </div>
-                <div className="item" onClick={() => handleImageClick(CostaImagen)}>
+                <div className="item">
                     <div class="textoDepartamentos">
                         <h2>Departamento 4</h2>
                         <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 </p>
                     </div>
-                    <div className='fotoDepto'>
-                        <img src={living} alt="Imagen 4"/>
+                    <div className='fotosDeptos' onClick={handleImageClick}>
+                        <img src={simboloMas} alt="Simbolo Mas" className='fotoSimbolo'/>
+                        <img src={living} alt="Imagen 4" className='fotoDepto'/>
                     </div>
                     <div className="contenidoOverlay">
                         <img src={simboloMas} alt="Simbolo más" className='simboloMas'/>

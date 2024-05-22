@@ -5,6 +5,10 @@ const Frase = () => {
     return (
         <div className='frase'>
             <img src={playa} className="fotoFrase"/>
+            <p className='textoFrase'>
+                Para insertar texto de muestra no localizado y seudo latino en Word, escriba =lorem(). 
+            </p>
+            <h2>Contactar</h2>
         </div>
     );
 }
