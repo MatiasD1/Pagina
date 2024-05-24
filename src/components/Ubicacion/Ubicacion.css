@@ -7,11 +7,9 @@
 }
 
 
-
-
 .portadaUbicacion{
     height: 500px;
-   background-image: url('../../img/SanCarlos.jpg');
+    background-image: url('../../img/SanCarlos.jpg');
     background-size: cover;
     background-position: center;  
 

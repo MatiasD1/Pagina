@@ -6,7 +6,7 @@ const NavBar = ({ isVisible }) => {
   return (
     <nav className={`NavBar ${isVisible ? 'fixed' : ''}`}>
       <h2>Puerto Bueno</h2>
-      <div className='links'>
+
           <ul className="nav justify-content-end">
             <li className="nav-item">
               <Link to="/" className="nav-link">Inicio</Link>
@@ -21,7 +21,7 @@ const NavBar = ({ isVisible }) => {
               <Link to="/contacto" className="nav-link">Contacto</Link>
             </li>
           </ul>
-      </div>
+      
     </nav>
   );
 };

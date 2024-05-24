@@ -4,8 +4,9 @@
     /*margin-right: 30px; Ajusta este valor según sea necesario para agregar espacio entre los enlaces */
     border-bottom: 2px solid transparent; /* Subrayado transparente por defecto */
     padding: 20px 20px; /* Ajusta el relleno del botón */
-    font-size: 18px; /* Ajusta el tamaño del texto del botón */
+    font-size: 16px; /* Ajusta el tamaño del texto del botón */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Libre Baskerville';
 }
 
 .nav-link:hover {

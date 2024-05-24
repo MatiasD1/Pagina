@@ -10,6 +10,7 @@ import fotoSala from "../../img/fotoSala.jpg"
 import living from "../../img/Living.JPG"
 import simboloMas from "../../img/icons/simboloMas.png" 
 import Servicios from '../Servicios/Servicios.js';
+import florFooter from '../../img/icons/florFooter.png' 
 
 const Departamentos = () => {
     const [showCarrusel, setShowCarrusel] = useState(false);
@@ -39,20 +40,34 @@ const Departamentos = () => {
                             <img src={fotoSala} alt="Imagen 1" className='fotoDepto'/>
                       </div>
                     <div className="textoDepartamentos">
-                        <h2>Departamento 1</h2>
-                        <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 </p>
+                        <h2 className='tituloDepto'>Departamento PB1</h2>
+                        <p className='subtituloDepto'>2 amb. 1 baño. 66m2. 3 personas</p>
+                        <p className='textoDepto'>
+                            Living-Comedor: mesa con cuántas sillas. Sillones cuántos. Smart TV 43”. <br /> 
+                            Escritorio con silla de oficina, 1 sofa cama de 1 plaza <br />
+                            Cocina completa con qué. <br />
+                            Dormitorio principal: cama de dos plazas. <br />
+                            Baño: Cómo es. ventilación natural<br />
+                        </p>
+                        <img src={florFooter} alt="icono flor decorativo" className='florFooter'/>
                     </div>
                     <div className="contenidoOverlay">
                         <img src={simboloMas} alt="Simbolo más" className='simboloMas'/>
                     </div>
                 </div>
-
-                
                 <div className="item">
-                    <div class="textoDepartamentos">
-                        <h2>Departamento 2</h2>
-                        <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 </p>
-                    </div>      
+                <div className="textoDepartamentos">
+                        <h2 className='tituloDepto'>Departamento PB2</h2>
+                        <p className='subtituloDepto'>2 amb. 1 baño. 66m2. 3 personas</p>
+                        <p className='textoDepto'>
+                            Living-Comedor: mesa con cuántas sillas. Sillones cuántos. Smart TV 43”.<br /> 
+                            Escritorio con silla de oficina, 1 sofa cama de 1 plaza <br />
+                            Cocina completa con qué. <br />
+                            Dormitorio principal: cama de dos plazas. <br />
+                            Baño: Cómo es. ventilación natural<br />
+                        </p>
+                        <img src={florFooter} alt="icono flor decorativo" className='florFooter'/>
+                    </div>
                     <div className='fotosDeptos' onClick={handleImageClick}> 
                         <img src={simboloMas} alt="Simbolo Mas" className='fotoSimbolo'/>
                         <img src={fotoDucha} alt="Imagen 2" className='fotoDepto'/>
@@ -61,24 +76,39 @@ const Departamentos = () => {
                         <img src={simboloMas} alt="Simbolo más" className='simboloMas'/>
                     </div>
                 </div>
-
                 <div className="item">
                     <div className='fotosDeptos' onClick={handleImageClick}>
                         <img src={simboloMas} alt="Simbolo Mas" className='fotoSimbolo'/>
                         <img src={fotoHabitacion} alt="Imagen 3" className='fotoDepto'/>
                     </div>
-                    <div class="textoDepartamentos">
-                        <h2>Departamento 3</h2>
-                        <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 </p>
+                    <div className="textoDepartamentos">
+                        <h2 className='tituloDepto'>Departamento PA1</h2>
+                        <p className='subtituloDepto'>2 amb. 1 baño. 66m2. 3 personas</p>
+                        <p className='textoDepto'>
+                            Living-Comedor: mesa con cuántas sillas. Sillones cuántos. Smart TV 43”.<br /> 
+                            Escritorio con silla de oficina, 1 sofa cama de 1 plaza <br />
+                            Cocina completa con qué. <br />
+                            Dormitorio principal: cama de dos plazas. <br />
+                            Baño: Cómo es. ventilación natural<br />
+                        </p>
+                        <img src={florFooter} alt="icono flor decorativo" className='florFooter'/>
                     </div>
                     <div className="contenidoOverlay">
                         <img src={simboloMas} alt="Simbolo más" className='simboloMas'/>
                     </div>
                 </div>
                 <div className="item">
-                    <div class="textoDepartamentos">
-                        <h2>Departamento 4</h2>
-                        <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 </p>
+                <div className="textoDepartamentos">
+                        <h2 className='tituloDepto'>Departamento PA2</h2>
+                        <p className='subtituloDepto'>2 amb. 1 baño. 66m2. 3 personas</p>
+                        <p className='textoDepto'>
+                            Living-Comedor: mesa con cuántas sillas. Sillones cuántos. Smart TV 43”.<br /> 
+                            Escritorio con silla de oficina, 1 sofa cama de 1 plaza <br />
+                            Cocina completa con qué. <br />
+                            Dormitorio principal: cama de dos plazas. <br />
+                            Baño: Cómo es. ventilación natural<br />
+                        </p>
+                        <img src={florFooter} alt="icono flor decorativo" className='florFooter'/>
                     </div>
                     <div className='fotosDeptos' onClick={handleImageClick}>
                         <img src={simboloMas} alt="Simbolo Mas" className='fotoSimbolo'/>

@@ -29,7 +29,7 @@ const Mapa = () => {
 
     return (
         <div id="mapa" className='Mapa'>
-            <p>Mapa</p>
+          
         </div>  
     );
 }

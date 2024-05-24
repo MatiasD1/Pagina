@@ -14,11 +14,38 @@
     margin-bottom: 45px;
 }
 
+.textoDepartamentos {
+    padding: 0px 20px; /* Espaciado interno para el texto */
+    font-family: 'Khula', sans-serif;
+    color: black;
+}
+
 .item {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Dos columnas, una para la foto y otra para el texto */
     align-items: center; /* Centra verticalmente el contenido */
     height: 450px; /* Altura de cada elemento */
+}
+
+.tituloDepto{
+      font-family: 'Libre Baskerville';
+      font-style: italic;
+      font-size: 35px;
+      color: black;
+}
+
+.subtituloDepto{
+    font-family: 'Khula', sans-serif;
+    font-size: 20px;
+}
+
+.textoDepto{
+    font-family: 'Imprima', serif;
+}
+
+.florFooter{
+    position: relative;
+    width: 50px;
 }
 
 .fotosDeptos {
@@ -44,12 +71,6 @@
     transition: 0.3s;
 }
 
-.textoDepartamentos {
-    padding: 0px 20px; /* Espaciado interno para el texto */
-}
-.textoDepartamentos h2{
-    color: black;
-}
 .simboloMas{
     position: absolute;
     display: none;
