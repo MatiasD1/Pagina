@@ -1,6 +1,6 @@
 import './Inicio.css'; 
 import Carrusel from '../Carrusel/Carrusel';
-import Frase from '../Frase/Frase';
+import EnlaceContacto from '../EnlaceContacto/EnlaceContacto';
 
 const Inicio = () => {
     
@@ -24,7 +24,7 @@ const Inicio = () => {
                 </p> 
             </div>
            
-            <Frase/>
+            <EnlaceContacto/>
         </div>  
     );
 }

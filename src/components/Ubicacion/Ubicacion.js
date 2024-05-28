@@ -12,6 +12,8 @@ const Ubicacion = () => {
             <div className='textoUbicacion'>
                 
             </div>
+            <div className='owlComponenteCarrusel'>
+            </div>
             <div className='serviciosCercanos'>
                 <Mapa/>
             </div>
