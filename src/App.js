@@ -8,7 +8,6 @@ import Departamentos from './components/Departamentos/Departamentos';
 import Contacto from './components/Contacto/Contacto';
 import Footer from './components/Footer/Footer';
 import Ubicacion from './components/Ubicacion/Ubicacion';
-import ScrollToTop from '../src/components/ScrollToTop/ScrollToTop'; // Importa el componente ScrollToTop
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,7 +35,6 @@ function App() {
     <Router>
       <div className="App">
         <NavBar isVisible={isVisible} />
-        <ScrollToTop /> {/* Añade el componente ScrollToTop */}
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/departamentos" element={<Departamentos />} />

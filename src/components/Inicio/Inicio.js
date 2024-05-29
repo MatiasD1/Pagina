@@ -1,6 +1,7 @@
 import './Inicio.css'; 
 import Carrusel from '../Carrusel/Carrusel';
 import EnlaceContacto from '../EnlaceContacto/EnlaceContacto';
+import imagenPlaya from '../../img/playa.jpg'
 
 const Inicio = () => {
     
@@ -24,7 +25,7 @@ const Inicio = () => {
                 </p> 
             </div>
            
-            <EnlaceContacto/>
+            <EnlaceContacto imageSrc={imagenPlaya} />
         </div>  
     );
 }

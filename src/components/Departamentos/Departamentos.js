@@ -11,6 +11,8 @@ import living from "../../img/Living.JPG"
 import simboloMas from "../../img/icons/simboloMas.png" 
 import Servicios from '../Servicios/Servicios.js';
 import florFooter from '../../img/icons/florFooter.png' 
+import imagenPlaya from '../../img/playa.jpg'
+import EnlaceContacto from '../EnlaceContacto/EnlaceContacto.js';
 
 const Departamentos = () => {
     const [showCarrusel, setShowCarrusel] = useState(false);
@@ -121,6 +123,7 @@ const Departamentos = () => {
             </div>
             {showCarrusel && <GaleriaImagenes images={selectedImage} onClose={() => setShowCarrusel(false)} />} {/* Renderiza el carrusel si showCarrusel es true */}
             <Servicios/>
+            <EnlaceContacto imageSrc={imagenPlaya} /> 
         </div>
     );
 }

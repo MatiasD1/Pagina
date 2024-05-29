@@ -13,6 +13,7 @@ footer{
 .columnaFooter{
     display: flex;
     flex-direction: column;
+    font-family:'Khula', sans-serif;;
 }
 .columnaFooter h3 {
     margin-bottom: 10px; /* Esto elimina el margen inferior predeterminado */

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 const NavBar = ({ isVisible }) => {
@@ -7,21 +6,20 @@ const NavBar = ({ isVisible }) => {
     <nav className={`NavBar ${isVisible ? 'fixed' : ''}`}>
       <h2>Puerto Bueno</h2>
 
-          <ul className="nav justify-content-end">
-            <li className="nav-item">
-              <Link to="/" className="nav-link">Inicio</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/departamentos" className="nav-link">Departamentos</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/ubicacion" className="nav-link">Ubicación</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/contacto" className="nav-link">Contacto</Link>
-            </li>
-          </ul>
-      
+      <ul className="nav justify-content-end">
+        <li className="nav-item">
+          <a href="/" className="nav-link">Inicio</a>
+        </li>
+        <li className="nav-item">
+          <a href="/departamentos" className="nav-link">Departamentos</a>
+        </li>
+        <li className="nav-item">
+          <a href="/ubicacion" className="nav-link">Ubicación</a>
+        </li>
+        <li className="nav-item">
+          <a href="/contacto" className="nav-link">Contacto</a>
+        </li>
+      </ul>
     </nav>
   );
 };

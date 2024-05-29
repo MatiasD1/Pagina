@@ -1,10 +1,11 @@
 import './Contacto.css'; 
+import fotoCosta from '../../img/costa.jpeg'
 
 const Contacto = () => {
 
     return (
             <div className="contacto">
-                
+                <img src={fotoCosta} className="fotoCosta" alt="Costa marplatense" />
 
                 <div className="textoContacto">
                     <p>lorem ipsum lorem ipsum lorem ipsum</p>

@@ -9,8 +9,9 @@
 
 .fotoEnlaceContacto {
     display: block;
-    width: 100%; /* Ajusta esto según sea necesario */
-    height: auto; /* Mantén la proporción de la imagen */
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    height: 500px; /* Ajusta la altura según sea necesario */
+    object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen si es necesario */
 }
 
 .textoEnlaceContacto {

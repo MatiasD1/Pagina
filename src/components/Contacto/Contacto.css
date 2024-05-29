@@ -1,17 +1,26 @@
 .contacto {
     display: flex;
     width: 100%;
-    background-image: url('../../img/costa.jpeg');
-    background-size: cover;
-    background-position: center;  
     flex-direction: row; 
     justify-content: space-between;
     height: 100vh;
     padding: 20px;
+    background-color: black;
+}
+
+.fotoCosta {
+    opacity: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor sin distorsionarse */
 }
 
 .textoContacto {
     align-self: center;
+    z-index: 1;
     /* Padding eliminado para alinear el texto correctamente */
 }
 
@@ -24,9 +33,10 @@
     background-color: #00000059;
     padding: 10px;
     border-radius: 5px;
-    font-family: 'Libre Baskerville';
+    font-family:'Khula', sans-serif;
     font-size: 16px;
     margin-right: 48px;
+    z-index: 1;
 }
 
 h2 {
