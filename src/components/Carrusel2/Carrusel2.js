@@ -9,21 +9,21 @@ const Carrusel2 = () => {
         <div className='carrusel2'>
             <div id="carouselExampleCaptions" className="carousel slide">
                 <div className="carousel-inner">
-                    <div className="carousel-item active">
+                    <div className="carousel-item carruselitem2 active">
                         <img src={fotoPieza} className="d-block w-100" alt="Foto de la pieza" />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Foto de la pieza</h5>
                             <p>Descripción de la foto de la pieza.</p>
                         </div>
                     </div>
-                    <div className="carousel-item">
+                    <div className="carousel-item carruselitem2">
                         <img src={fotoExterior} className="d-block w-100" alt="Foto del exterior" />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Foto del exterior</h5>
                             <p>Descripción de la foto del exterior.</p>
                         </div>
                     </div>
-                    <div className="carousel-item">
+                    <div className="carousel-item carruselitem2">
                         <img src={fotoSala} className="d-block w-100" alt="Foto de la sala" />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Foto de la sala</h5>

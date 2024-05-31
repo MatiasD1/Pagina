@@ -57,7 +57,7 @@ export default () => {
       </SwiperSlide>
       <SwiperSlide>
         <img src={playaGrande} alt="Slide 3" style={{ width: '100%', height: '400px' }} />
-        <p className='textoSlides'>Playa Varese 1.2Km</p>
+        <p className='textoSlides'>Playa Grande 1.2Km</p>
       </SwiperSlide>
       <SwiperSlide>
         <img src={villaVictoria} alt="Slide 3" style={{ width: '100%', height: '400px' }} />
@@ -73,7 +73,7 @@ export default () => {
       </SwiperSlide>
       <SwiperSlide>
         <img src={playaVarese} alt="Slide 3" style={{ width: '100%', height: '400px' }} />
-        <p className='textoSlides'>Playa Grande 1.2Km</p>
+        <p className='textoSlides'>Playa Varese 1.2Km</p>
       </SwiperSlide>
     </Swiper>
   );

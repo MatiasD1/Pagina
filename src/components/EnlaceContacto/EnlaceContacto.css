@@ -5,6 +5,9 @@
 
 .contenedorEnlaceContacto {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fotoEnlaceContacto {
@@ -16,7 +19,7 @@
 
 .textoEnlaceContacto {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(245, 222, 179); /* Cambia el color del texto si es necesario */
@@ -34,4 +37,10 @@
     border: 2px solid rgb(211, 211, 211);;
     background: rgba(0, 0, 0, 0.6);
     cursor: pointer;
+}
+
+.FraseEnlaceContacto{
+    position: absolute;
+    color: white;
+    top: 25%;
 }

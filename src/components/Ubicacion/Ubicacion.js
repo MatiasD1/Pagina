@@ -1,6 +1,7 @@
 import './Ubicacion.css'; 
 import Mapa from '../Mapa/Mapa.js'
 import Swiper from '../Swiper/Swiper.js';
+import Swiper2 from '../Swiper2/Swiper2.js';
 import Carrusel2 from '../Carrusel2/Carrusel2.js';
 
 const Ubicacion = () => {
@@ -12,7 +13,7 @@ const Ubicacion = () => {
             <Carrusel2/>
             </div>
             <div className='textoUbicacion'>
-                
+            <Swiper2/>
             </div>
             <div className='owlComponenteCarrusel'>
 

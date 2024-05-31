@@ -6,7 +6,7 @@
 }
 
 
-.carrusel2 .carousel-item img {
+.carrusel2 .carousel-item1 img {
     height: 450px; /* Ajusta este valor según la altura deseada */
     
     object-fit: cover; /* Ajusta la imagen para cubrir el área del contenedor */

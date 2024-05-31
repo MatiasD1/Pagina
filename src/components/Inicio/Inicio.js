@@ -2,13 +2,14 @@ import './Inicio.css';
 import Carrusel from '../Carrusel/Carrusel';
 import EnlaceContacto from '../EnlaceContacto/EnlaceContacto';
 import imagenPlaya from '../../img/playa.jpg'
+import TextAnimation from '../TextAnimation1/TextAnimation1';
 
 const Inicio = () => {
     
     return (
         <div className='Inicio'>
             <Carrusel/>
-           
+            <TextAnimation/>
             <h2>Titulo</h2>
             <p className='textoFrase'>
                 Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion 

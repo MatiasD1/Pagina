@@ -1,12 +1,12 @@
 import React from 'react';
 import './EnlaceContacto.css'; 
-import playa from '../../img/playa.jpg';
 
-const EnlaceContacto = () => {
+const EnlaceContacto = ({ imageSrc }) => {
     return (
         <div className='EnlaceContacto'>
             <div className="contenedorEnlaceContacto">
-                <img src={playa} className="fotoEnlaceContacto" alt="Playa"/>
+                <p className='FraseEnlaceContacto'>lorem ipsum lorem ipsum lorem <br /> ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+                <img src={imageSrc} className="fotoEnlaceContacto" alt="Enlace Contacto" />
                 <a href="/contacto" className="textoEnlaceContacto">Contacto</a>
             </div>
         </div>
